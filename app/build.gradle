@@ -15,6 +15,10 @@ dependencies {
 dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.3'
 }
+dependencies {
+    implementation 'org.mindrot:jbcrypt:0.4'
+}
+
 
 application {
     // Define the main class for the application.
