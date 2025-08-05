@@ -51,7 +51,7 @@ public class App {
             user_booking_service saver = new user_booking_service(newUser);
             saver.saveUser();
 
-            System.out.println("\n✅ User saved successfully!");
+            System.out.println("\n User saved successfully!");
 
         } catch (Exception e) {
             System.out.println("\n Error: " + e.getMessage());
