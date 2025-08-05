@@ -9,7 +9,12 @@ import static org.example.utilities.StringUtils.join;
 import static org.example.utilities.StringUtils.split;
 import static org.example.app.MessageUtils.getMessage;
 
+
 import org.apache.commons.text.WordUtils;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class App {
     public static void main(String[] args) {
@@ -17,5 +22,7 @@ public class App {
         tokens = split(getMessage());
         String result = join(tokens);
         System.out.println(WordUtils.capitalize(result));
+        List<Integer> l = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        List<Integer> li = l.stream().filter(i -> i%2 == 0).collect(Collectors.toList());
     }
 }

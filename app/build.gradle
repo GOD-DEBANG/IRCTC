@@ -12,6 +12,9 @@ dependencies {
     implementation 'org.apache.commons:commons-text'
     implementation project(':utilities')
 }
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.3'
+}
 
 application {
     // Define the main class for the application.
