@@ -54,7 +54,7 @@ public class App {
             System.out.println("\n✅ User saved successfully!");
 
         } catch (Exception e) {
-            System.out.println("\n❌ Error: " + e.getMessage());
+            System.out.println("\n Error: " + e.getMessage());
             e.printStackTrace(); // for debugging
         }
     }
